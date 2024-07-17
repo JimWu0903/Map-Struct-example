@@ -2,17 +2,20 @@ package org.example;
 
 public class Target {
 
-    private String fullName;
+    private String name;
+
+    private String rocDate;
     private int age;
 
     // Getters and Setters
 
-    public String getFullName() {
-        return fullName;
+
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -21,6 +24,14 @@ public class Target {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getRocDate() {
+        return rocDate;
+    }
+
+    public void setRocDate(String rocDate) {
+        this.rocDate = rocDate;
     }
 }
 

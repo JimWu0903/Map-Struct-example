@@ -3,7 +3,10 @@ package org.example;
 public class Source {
 
     private String name;
+
+    private String dateTime;
     private int age;
+
 
     // Getters and Setters
 
@@ -22,5 +25,13 @@ public class Source {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 }

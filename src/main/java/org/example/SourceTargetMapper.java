@@ -6,10 +6,10 @@ import org.mapstruct.factory.Mappers;
 
 
 
-@Mapper
+@Mapper(uses = CustomizeField.class)
 public interface SourceTargetMapper {
     SourceTargetMapper INSTANCE = Mappers.getMapper(SourceTargetMapper.class);
 
-    @Mapping(source = "name", target = "fullName")
+    @Mapping(source = "dateTime", target = "rocDate", qualifiedByName = "formatRocDate")
     Target sourceToTarget(Source source);
 }
